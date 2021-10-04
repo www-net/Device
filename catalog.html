@@ -9,49 +9,55 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <h1 class="visually-hidden">Девайс, интернет магазин гаджетов</h1>
-        <a>
-            <img src="img/logo.svg" alt="Логотип Device">
-        </a>
+    <div class="container">
+        <header class="main-header">
+            <div class="header-wrapper">
+                <h1 class="visually-hidden">Девайс, интернет магазин гаджетов</h1>
+                <a class="header-logo" href="index.html">
+                    <img class="header-logo-img header-link-condition" width="163" height="35" src="img/logo.svg" alt="Логотип Device">
+                </a>
 
-        <form>
-            <label class="visually-hidden" for="search" for="">Поле поиска</label>
-            <input class=""  type="text" id="search" placeholder="Поиск по сайту">
-            <button class="" type="submit">Найти</button>
-        </form>
+                <form class="navigation-bar search" action="https://echo.htmlacademy.ru" method="GET">
+                    <span class="visually-hidden">Поле поиска</span>
+                    <label class="search-label" for="search" for=""></label>
+                    <input class="search-field" type="text" id="search" placeholder="Поиск по сайту">
+                    <button class="search-button" type="submit">Найти</button>
+                </form>
+                <ul class="navigation-bar user-navigation">
+                    <li class="user-navigation-item"><a class="user-link-entry header-link-condition" href="blank.html">Войти</a></li>
+                    <li class="user-navigation-item"><a class="user-link-compare header-link-condition" href="blank.html">Сравнить</a></li>
+                    <li class="user-navigation-item"><a class="user-link-cart header-link-condition" href="blank.html">Корзина</a></li>
+                </ul>
+            </div>
 
-        <ul>
-            <li><a href="blank.html">Войти</a></li>
-            <li><a href="blank.html">Сравнить</a></li>
-            <li><a href="blank.html">Корзина</a></li>
-        </ul>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="catalog.html">Каталог товаров</a>
-                    <div>
-                        <ul>
-                            <li><a href="#">Виртуальная реальность</a></li>
-                            <li><a href="#">Моноподы для селфи</a></li>
-                            <li><a href="#">Экшн-камеры</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Фитнес-браслеты</a></li>
-                            <li><a href="#">Умные часы</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Квадрокоптеры</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav class="main-navigation header-wrapper">
+                <ul class="main-navigation-list navigation-bar">
+                    <li class="main-navigation-item">
+                        <a class="navigation-link-catalog navigation-link" href="catalog.html">Каталог товаров</a>
+                        <div class="dropdown-menu">
+                            <ul class="main-navigation-column">
+                                <li class="navigation-column-item"><a class="navigation-column-link header-link-condition" href="#">Виртуальная реальность</a></li>
+                                <li class="navigation-column-item"><a class="navigation-column-link header-link-condition" href="#">Моноподы для селфи</a></li>
+                                <li class="navigation-column-item"><a class="navigation-column-link header-link-condition" href="#">Экшн-камеры</a></li>
+                            </ul>
+                            <ul class="main-navigation-column">
+                                <li class="navigation-column-item"><a class="navigation-column-link header-link-condition" href="#">Фитнес-браслеты</a></li>
+                                <li class="navigation-column-item"><a class="navigation-column-link header-link-condition" href="#">Умные часы</a></li>
+                            </ul>
+                            <ul class="main-navigation-column">
+                                <li class="navigation-column-item"><a class="navigation-column-link header-link-condition" href="#">Квадрокоптеры</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="services-navigation-list navigation-bar">
+                    <li class="navigation-item"><a class="navigation-link header-link-condition" href="#">Доставка</a></li>
+                    <li class="navigation-item"><a class="navigation-link header-link-condition" href="#">Гарантия</a></li>
+                    <li class="navigation-item"><a class="navigation-link header-link-condition" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <main>
         <h1 class="catalog-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs-list">
