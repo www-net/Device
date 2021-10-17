@@ -62,35 +62,16 @@
         <!--   Slider    -->
         <section class="slider">
             <h2 class="visually-hidden">Слайдер</h2>
-            <ul class="slider-toggle-list">
-                <li class="toggle-item">
-                    <button class="toggle-button">
-                        <span class="visually-hidden">Первый слайд</span>
-                    </button>
-
-                </li>
-                <li class="toggle-item">
-                    <button class="toggle-button">
-                        <span class="visually-hidden">Второй слайд</span>
-                    </button>
-
-                </li>
-                <li class="toggle-item">
-                    <button class="toggle-button">
-                        <span class="visually-hidden">Третий слайд</span>
-                    </button>
-
-                </li>
-            </ul>
             <ul class="slider-list">
-                <li class="slider-item slide-1 slide-current">
-                    <div class="slide-wrapper">
+                <li class="slider-item slide-1 slider-current">
+                    <div class="slide-nubrer">01</div>
+                    <div class="slide-wrapper slide-wrapper-img">
                         <img class="slide-image slide-image-1" src="img/promo-slider/slider-1.png" width="384" height="486" alt="Палка для селфи">
                     </div>
                     <div class="slide-wrapper">
                         <h3 class="slide-title">Делай селфи,<br> как Бен Стиллер!</h3>
-                        <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                        <a class="button" href="">Подробнее</a>
+                        <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                        <a class="button slide-button" href="#">Подробнее</a>
                         <dl class="slide-description-list">
                             <dt>Длина палки</dt>
                             <dd>8,5 м</dd>
@@ -102,13 +83,14 @@
                     </div>
                 </li>
                 <li class="slider-item slide-2">
-                    <div class="slide-wrapper">
+                    <div class="slide-nubrer">02</div>
+                    <div class="slide-wrapper slide-wrapper-img">
                         <img class="slide-image slide-image-2" src="img/promo-slider/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
                     </div>
                     <div class="slide-wrapper">
-                        <h3 class="slide-title">Худеем правильно!</h3>
-                        <p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                        <a class="button" href="">Подробнее</a>
+                        <h3 class="slide-title">Худеем<br> правильно!</h3>
+                        <p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
+                        <a class="button slide-button" href="">Подробнее</a>
                         <dl class="slide-description-list">
                             <dt>Без подзарядки</dt>
                             <dd>48 часов</dd>
@@ -116,20 +98,32 @@
                     </div>
                 </li>
                 <li class="slider-item slide-3">
-                    <div class="slide-wrapper">
+                    <div class="slide-nubrer">03</div>
+                    <div class="slide-wrapper slide-wrapper-img">
                         <img class="slide-image slide-image-3" src="img/promo-slider/slider-3.png" width="526" height="334" alt="Фитнес-браслет">
                     </div>
                     <div class="slide-wrapper">
                         <h3 class="slide-title">Порхает как бабочка, жалит как пчела!</h3>
-                        <p class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                        <a class="button" href="">Подробнее</a>
+                        <p class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
+                        <a class="button slide-button" href="">Подробнее</a>
                         <dl class="slide-description-list">
                             <dt>Дальность полета</dt>
-                            <dd>800 метров</dd>
+                            <dd>800 м</dd>
                             <dt>Радиус поражения</dt>
-                            <dd>50 метров</dd>
+                            <dd>50 м</dd>
                         </dl>
                     </div>
+                </li>
+            </ul>
+            <ul class="slider-toggle-list">
+                <li class="toggle-item">
+                    <button class="toggle-button toggle-current" type="button" aria-label="Первый слайд"></button>
+                </li>
+                <li class="toggle-item">
+                    <button class="toggle-button" type="button" aria-label="Второй слайд"></button>
+                </li>
+                <li class="toggle-item">
+                    <button class="toggle-button" type="button" aria-label="Третий слайд"></button>
                 </li>
             </ul>
         </section>
@@ -140,7 +134,7 @@
                     <a class="categories-link categories-vr" href="#"><p>Виртуальная реальность</p></a>
                 </li>
                 <li class="categories-item">
-                    <a class="categories-link categories-monopod" href="#"><p>Моноподы для селфи</p></a>
+                    <a class="categories-link categories-monopod" href="#"><p>Моноподы<br> для селфи</p></a>
                 </li>
                 <li class="categories-item">
                     <a class="categories-link categories-camera" href="#"><p>Экшн-камеры</p></a>
@@ -316,6 +310,8 @@
         <!--   Форма    -->
         <button class="modal-close" type="button">Закрыть</button>
     </section>
+
+    <script src="js/promo-slider.js"></script>
 
 </body>
 </html>

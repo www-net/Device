@@ -66,20 +66,39 @@
             <li><a>Моноподы для селфи</a></li>
         </ul>
         <!--     Фильтр     -->
-        <section>
-            <h2>Фильтр:</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
-                <fieldset>
-                    <legend>Стоимость</legend>
-                </fieldset>
-                <fieldset>
-                    <legend>Цвет</legend>
-                </fieldset>
-                <fieldset>
-                    <legend>Bluetooth</legend>
-                </fieldset>
-                <button type="submit">Показать</button>
-            </form>
+        <section class="filters">
+                <h2 class="filter-title">Фильтр:</h2>
+                <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="filter-wrapper">
+                        <fieldset class="filter-item">
+                            <legend class="filter-legend">Стоимость</legend>
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle toggle-min" style="left: -10px;"></div>
+                                    <div class="toggle toggle-max" style="left: 60%;"></div>
+                                </div>
+                                <div class="price-controls">
+                                    <label class="min-price">
+                                        от <input class="price-min-value" type="number" volue="0">
+                                    </label>
+                                    <label class="max-price">
+                                        до <input class="price-max-value" type="number" volue="5000">
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                        <legend>Цвет</legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Bluetooth</legend>
+                    </fieldset>
+                    <button type="submit">Показать</button>
+                </form>
         </section>
         <section>
             <h2>Сортировка:</h2>
