@@ -2076,18 +2076,24 @@ img {
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.3;
+
+    background-color: var(--basic-black);
+    border-radius: 50%;
 }
 
-.social-button-fb::before {
-    background-image: url("../img/footer/fb.svg");
+.social-button-tg::before {
+    background-image: url("../img/footer/telegram.svg");
+    background-position: 3px 3px;
 }
 
-.social-button-inst::before {
-    background-image: url("../img/footer/instagram.svg");
+.social-button-vk::before {
+    background-image: url("../img/footer/vk.svg");
+    background-position: 5px 6px;
 }
 
-.social-button-tw::before {
-    background-image: url("../img/footer/twitter.svg");
+.social-button-yt::before {
+    background-image: url("../img/footer/youtube.svg");
+    background-position: 10px 9px;
 }
 
 .footer-academy-logo {
